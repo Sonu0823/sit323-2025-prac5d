@@ -37,12 +37,12 @@ The Docker file uses a Node.js image, installs dependencies, copies source code,
 docker build -t my-node-app .
 docker run -d -p 8080:8080 my-node-app
 
-# Verify the app by visiting:
+### Verify the app by visiting:
 http://localhost:8080
 
 ### 4. Setting up Google Artifact Registry
 
-# Configuring GCP project:
+### Configuring GCP project:
 
 gcloud config set project YOUR_PROJECT_ID
 gcloud services enable artifactregistry.googleapis.com
