@@ -20,14 +20,14 @@ Ensure the following tools are installed:
 
 ### 1. Clone and Prepare the Project
 
-Start by cloning your existing Task 5.1P repository:
+Cloning the existing Task 5.1P repository:
 
 git clone https://github.com/YOUR_USERNAME/sit323-2025-prac5p.git
 mv sit323-2025-prac5p sit323-2025-prac5d
 cd sit323-2025-prac5d 
 
 
-### 2. Dockerize the Node.js Application
+### 2. Dockerizing the Node.js Application
 
 The Docker file uses a Node.js image, installs dependencies, copies source code, exposes port 8080, and starts the app using npm start.
 
@@ -38,13 +38,11 @@ docker build -t my-node-app .
 docker run -d -p 8080:8080 my-node-app
 
 # Verify the app by visiting:
-
 http://localhost:8080
 
+### 4. Setting up Google Artifact Registry
 
-### 4. Setup Google Artifact Registry
-
-# Configure your GCP project:
+# Configuring GCP project:
 
 gcloud config set project YOUR_PROJECT_ID
 gcloud services enable artifactregistry.googleapis.com
